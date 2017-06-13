@@ -1,6 +1,7 @@
 mixin client(data)
-    li: a(href="#"): img(src="img/main/clients-block/" + data.file alt=data.alt class!=attributes.class)
-
+    li 
+        a(href="#"): img(src="img/main/clients-block/" + data.file alt=data.alt class!=attributes.class) 
+        p Most designers set their type arbitrarily, either by pulling values out of the
 section.container
   section.clients-block.info-block
     h2 Клиенты
@@ -10,7 +11,6 @@ section.container
     ul.list-inline
         each data in [{file:'7.png',alt:'ami'},{file:'8.png',alt:'krone'},{file:'9.png',alt:'stroimatinstrument'},{file:'10.png',alt:'minskmetropoliten'},{file:'11.png',alt:'alutech'},{file:'12.png',alt:'industry'}]
             +client(data)
-
 
 
                 
