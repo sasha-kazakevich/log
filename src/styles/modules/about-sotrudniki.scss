@@ -1,0 +1,27 @@
+.about-sotrudniki-block {
+    background: url('../img/about/about-sotrudniki/back.png');
+    background-size: cover;
+    h2{
+        text-transform: uppercase;
+        font-family: 'Ubuntu-Medium';
+        font-size: 24px;
+    }
+
+    p {
+        margin: 40px 0 0 0;
+        font-family: 'Ubuntu-Light';
+        font-size: 18px;
+        line-height: 36px;
+        color: #fff;
+    }
+    p:first-child {
+        margin-top: 80px;
+    }
+    .who {
+        font-size: 18px;
+        margin: 310px 0 80px 0;
+        span {
+            font-family: 'Ubuntu-Medium';
+        }
+    }
+}

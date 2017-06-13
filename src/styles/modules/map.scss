@@ -1,0 +1,33 @@
+.map-block {
+    padding: 0;
+    position: relative;
+}
+
+.map-map {
+    height: 500px;
+}
+
+.map-card {
+    width: 280px;
+    background-color: #fff;
+    position: absolute;
+    top: 40px;
+    right: 200px;
+    border: 1px solid #c6c1ae;
+    padding: 60px 30px;
+    border-radius: 5px;
+
+    p {
+        margin-bottom: 28px;
+    }
+
+    &__info-icon {
+        margin-right: 25px;
+        color: #2196f3;
+    }
+
+    &__none-icon{
+        width: 41px;
+        height: 14px;
+    }
+}

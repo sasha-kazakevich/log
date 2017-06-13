@@ -1,0 +1,100 @@
+.btnm {
+  position: relative;
+
+  width: 240px;
+  height: 60px;
+
+  display: block;
+  margin: 30px 0;
+  padding: 0;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+  background-color: #2196f3;
+  color: #fff;
+
+  transition: background-color .3s;
+}
+
+.btnm:hover, .btnm:focus {
+  background-color: #0d47a1;
+}
+
+.btnm > * {
+  position: relative;
+}
+
+.btnm span {
+  display: block;
+  padding: 11px 44px;
+}
+
+// .btnm:before {
+//   content: "";
+//
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//
+//   display: block;
+//   width: 0;
+//   padding-top: 0;
+//
+//   border-radius: 100%;
+//
+//   background-color: rgba(236, 240, 241, .3);
+//
+//   -webkit-transform: translate(-50%, -50%);
+//   -moz-transform: translate(-50%, -50%);
+//   -ms-transform: translate(-50%, -50%);
+//   -o-transform: translate(-50%, -50%);
+//   transform: translate(-50%, -50%);
+// }
+
+// .btnm:active:before {
+//   width: 120%;
+//   padding-top: 120%;
+//
+//   transition: width .2s ease-out, padding-top .2s ease-out;
+// }
+
+.btnm-small {
+    width: 160px;
+    height: 40px;
+    margin: 0 auto;
+}
+.btnm-small:hover, .btnm-small:focus {
+  background-color: #0d47a1;
+}
+
+.btnm-small span {
+    padding: 11px 0;
+}
+
+.circle {
+  position: absolute;
+
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+
+  animation: scale-circle 2.5s;
+}
+
+
+@keyframes scale-circle {
+    from {
+      transform: scale(.2);
+      opacity: 0.6;
+    }
+    to {
+      transform: scale(100);
+      opacity: 0;
+    }
+}

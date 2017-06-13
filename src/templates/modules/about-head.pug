@@ -1,0 +1,11 @@
+mixin numbers(data)
+  .col-md-3.people-number
+    p.number= data.number
+    p.name= data.name
+
+section.container-fluid.head-block.about-head
+  section.container
+    section.people-block.about-people
+      div.row.people-info
+        each data in [{number:'4',name:'отдела'},{number:'20+',name:'профессионалов'},{number:'7',name:'лет вместе'},{number:'150',name:'тысяч тонн в месяц'}]
+          +numbers(data)

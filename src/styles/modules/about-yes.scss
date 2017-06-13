@@ -1,0 +1,26 @@
+.about-yes-block {
+    background: url('../img/about/about-yes/pattern.png');
+    background-size: cover;
+    margin: 88px 0;
+    .yes-block {
+        padding: 0;
+        h2 {
+            margin: 110px 0;
+            text-transform: uppercase;
+            font-family: 'Ubuntu-Medium';
+            font-size: 24px;
+            color: #fff;
+            padding: 0;
+        }
+        button {
+            margin: 90px 0;
+            background-color: #fff;
+            color: #2196F3;
+            float: right;
+        }
+        button:hover {
+            background-color: #0D47A1;
+            color: #fff;
+        }
+    }
+}

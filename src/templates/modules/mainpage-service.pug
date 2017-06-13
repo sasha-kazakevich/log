@@ -1,0 +1,7 @@
+include ./mixsins
+
+section.service-block.container-fluid
+  div.row
+    each data in [{href: '/services', src: 'img/main/service/1.png',name:'автомобильные перевозки',descript:'Most designers set their type arbitrarily, either by pulling values out '},{href: '/services', src: 'img/main/service/2.png',name:'железнодорожные перевозки',descript:'Most designers set their type arbitrarily, either by pulling values out '},{href: '/services', src: 'img/main/service/3.png',name:'авиа <br/> перевозки',descript:'Most designers set their type arbitrarily, either by pulling values out '},{href: '/services', src: 'img/main/service/1.png',name:'морские <br/> перевозки',descript:'Most designers set their type arbitrarily, either by pulling values out '},{href: '/services', src: 'img/main/service/2.png',name:'мультимодальные перевозки',descript:'Most designers set their type arbitrarily, either by pulling values out '},{href: '/services', src: 'img/main/service/3.png',name:'сборные <br/> грузы',descript:'Most designers set their type arbitrarily, either by pulling values out '}]
+      +serviceCard(data,2)
+        

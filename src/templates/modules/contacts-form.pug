@@ -1,0 +1,37 @@
+section.container
+  section.form-con
+    h2 написать письмо
+    .form-row
+      input.form-control(type='text', placeholder='Тема письма')
+    .form-row
+      .input-group.contacts-form
+        span#basic-addon1.input-group-addon
+          img(src="img/forma/name.png" alt="log" width="20" height="20")
+        input.form-control(type='text', placeholder='Ваше имя', aria-describedby='basic-addon1')
+      .input-group.contacts-form
+        span#basic-addon1.input-group-addon
+          img(src="img/forma/mail.png" alt="log" width="20" height="16")
+        textarea.form-control(wrap="soft", type='text', placeholder='Сообщение', aria-describedby='basic-addon1' contenteditable="true")
+    .form-row
+      .input-group.contacts-form
+        span#basic-addon1.input-group-addon
+          img(src="img/forma/company.png" alt="log" width="26" height="24")
+        input.form-control(type='text', placeholder='Компания', aria-describedby='basic-addon1')
+    .form-row
+      .input-group.contacts-form
+        span#basic-addon1.input-group-addon
+          img(src="img/forma/phone.png" alt="log" width="24" height="24")
+        input.form-control(type='text', placeholder='Телефон', aria-describedby='basic-addon1')
+    .form-row
+      .input-group.contacts-form
+        span#basic-addon1.input-group-addon
+          img(src="img/forma/mail.png" alt="log" width="20" height="16")
+        input.form-control(type='text', placeholder='Электронная почта', aria-describedby='basic-addon1')
+    .form-row.justify
+      .security
+        span.icon-un
+          img(src="img/forma/zm.png" alt="log" width="20" height="27")
+        span.security__title Данные не передаются третьим лицам
+      button.btnm.btnm-form(type="button")
+        span ОТПРАВИТЬ
+    

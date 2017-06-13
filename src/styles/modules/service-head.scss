@@ -1,0 +1,50 @@
+.service-block {
+    justify-content: center;
+
+    &-head {
+        background: url('../img/services/service-head-bg.png');
+        background-size: cover;
+
+    }
+
+    &-avia-head {
+        background: url('../img/uslugi/bg.png');
+        background-size: cover;
+        justify-content: center;
+    }
+
+    &-one {
+        background: url('../img/services/service-block-one.png');
+        height: 100%;
+        background-size: contain;
+    }
+
+    &-two {
+        background: url('../img/services/service-block-two.png');
+        height: 100%;
+        background-size: cover;
+    }
+
+    .dir-text {
+        width: 48.1%;
+        padding: 90px 0;
+        line-height: 21px;
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+            line-height: 45px;
+        }
+        p {
+            font-size: 14px;
+            margin-top: 25px;
+        }
+    }
+}
+.service-button {
+    bottom: 90px;
+}
+
+.service-text {
+    padding-bottom: 120px;
+}

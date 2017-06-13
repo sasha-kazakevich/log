@@ -1,0 +1,19 @@
+@import './fonts.scss';
+
+@import './global.scss';
+@import "_override-variables";
+
+@import "_bootstrap-custom";
+
+@import './materilal-button/button.scss';
+@import './animateCss/animate.scss';
+@import './swiper/swiper.min.scss';
+
+@import './modules/main-menu.scss';
+
+@import './stage/main.scss';
+@import './stage/about.scss';
+@import './stage/vacancies.scss';
+@import './stage/directions.scss';
+@import './stage/services.scss';
+@import './stage/contacts.scss';

@@ -1,0 +1,38 @@
+.people-block {
+    background-image: url('../img/main/people/background.png');
+    background-size: cover;
+
+    &__wrapper {
+        height: 100vh;
+    }
+}
+
+.people-info {
+    padding-top: 60px;
+}
+
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+.people-number {
+    text-align: center;
+    font-family: 'Ubuntu-Bold';
+    color:#3350B9;
+
+    &__number {
+        font-size: 46px;
+    }
+
+    &__name {
+        text-transform: uppercase;
+        padding-top: 10px;
+    }
+}
+
+
+.people-button {
+    padding-top: 250px;
+}

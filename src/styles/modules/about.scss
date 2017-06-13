@@ -1,0 +1,22 @@
+.info-block {
+    h2 {
+        font-family: 'Ubuntu-Medium';
+        color: #263238;
+        text-transform: uppercase;
+        padding: 90px 0;
+        margin: 0;
+        font-size: 24px;
+        @media screen and (max-width: 320px) {
+                 font-size: 16px;
+                 padding: 60px 0;
+             }
+    }
+    p {
+        color: #455a64;
+        line-height: 21px;
+        margin-bottom: 25px;
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
+}

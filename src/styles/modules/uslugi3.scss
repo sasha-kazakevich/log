@@ -1,0 +1,29 @@
+.uslugi3-block{
+	.row {
+		margin: 0;
+	}
+	.title{
+		font-size: 22px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.title-row,.name-row,.picture-row{
+		padding-bottom: 70px;
+	}
+	.name-row{
+		color: #0066D0;
+	}
+	.img-left{
+		min-height: 120px;
+		max-width: 110px;
+	}
+	.arrow-row{
+		padding-top: 40px;
+	}
+	.info-row {
+		padding-bottom: 50px;
+	}
+	.to-row{
+		padding-top: 30px;
+	}
+}

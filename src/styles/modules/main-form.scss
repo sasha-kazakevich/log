@@ -1,0 +1,108 @@
+.form {
+    width: 1110px;
+    height: 637px;
+    background-color: #fff;
+    padding: 30px;
+    color: #455a64;
+
+    label {
+        color: #455a64;
+    }
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.form-row.margin-bot {
+    margin-bottom: 56px;
+    align-items: center;
+}
+
+.form-row.justify {
+    align-items: center;
+}
+
+.main-form,.undo,.redo,.left-r,.right-r{
+    width: 235px;
+}
+.main-check {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+}
+.form-control {
+    background-color: #e8eaf6;
+    // border-left: none;
+    box-shadow: none;
+    border: none;
+    padding: 25px 12px;
+    color: #455a64;
+}
+.form-control:focus {
+    box-shadow: none !important;
+}
+.input-group-addon {
+    background-color: #e8eaf6;
+    border: none;
+}
+.checkbox {
+    display: flex;
+    margin: 0;
+
+    .box {
+        width: 50px;
+        height: 50px;
+        background-color: #e8eaf6;
+        margin: 0 0 0 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+}
+
+.os {
+    width: 520px;
+}
+
+.left-group,.right-group {
+    width: 48.5%;
+}
+
+.radio-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-un {
+    padding-right: 30px;
+}
+.icon-re {
+    padding-left: 30px;
+}
+.radio-button .in-check {
+    display: inline-block;
+    margin-bottom: 36.4px;
+}
+
+.radio-button .form-label {
+    position: relative;
+    left: 8px;
+    top: -3px;
+}
+
+.prim {
+    position: relative;
+    top: 2px;
+
+    input {
+        padding-left: 24px;
+    }
+}
+
+.btnm-form {
+    margin: 0;
+}

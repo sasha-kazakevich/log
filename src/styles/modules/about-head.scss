@@ -1,0 +1,17 @@
+.about-head {
+    background-image: url('../img/about/background.png');
+    background-size: cover;
+    justify-content: flex-end;
+
+    .about-people {
+
+        .people-info {
+            padding: 0;
+            padding-bottom: 100px;
+
+            .people-number {
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+include ./mixsins
+		
+section.people-block.container-fluid
+	section.people-block__wrapper.container
+		div.people-info.clearfix
+			each data in [{number:'4',name:'отдела'},{number:'20+',name:'профессионалов'},{number:'7',name:'лет вместе'},{number:'150',name:'тысяч тонн в месяц'}]
+				+numbers(data)
+		div.people-button.clearfix
+			.col-md-offset-9.col-md-3
+				button.btnm(type="button")
+					span О НАШЕЙ КОМАНДЕ

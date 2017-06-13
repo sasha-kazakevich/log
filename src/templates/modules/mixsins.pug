@@ -1,0 +1,31 @@
+mixin serviceCard(data,col)
+  a(href=data.href)
+    button.service-card.service-card-wrapper(class="col-md-" + col)
+      img.service-card__image(src= data.src)
+      p.service-card__name!= data.name
+      p.service-card__descript= data.descript
+
+
+mixin pageHeader(data)
+  section.container-fluid.head-block(class= data.pageBlock)
+    section.container
+      div.dir-text.service-text
+          h2!= data.title
+          p= data.text
+
+mixin pageHeadButton(data)
+  section.container-fluid.head-block(class= data.pageBlock)
+    section.container
+      div.dir-text.service-text
+          h1!= data.title
+          p= data.text
+      div.row.people-button
+        .col-md-offset-9.col-md-3
+          button.btnm(type="button" class= data.btnType)
+            span= data.btn
+
+
+mixin numbers(data)
+  .col-md-3.people-number
+    p.people-number__number= data.number
+    p.people-number__name= data.name

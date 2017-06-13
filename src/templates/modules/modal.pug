@@ -1,0 +1,129 @@
+#myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-body
+        section.form
+          .form-row
+            .input-group.main-form
+              span#basic-addon1.input-group-addon
+                img(src="img/forma/name.png" alt="log" width="20" height="20")
+              input.form-control(type='text', placeholder='Ваше имя', aria-describedby='basic-addon1')
+            .input-group.main-form
+              span#basic-addon1.input-group-addon
+                img(src="img/forma/company.png" alt="log" width="26" height="24")
+              input.form-control(type='text', placeholder='Компания', aria-describedby='basic-addon1')
+            .input-group.main-form
+              span#basic-addon1.input-group-addon
+                img(src="img/forma/phone.png" alt="log" width="24" height="24")
+              input.form-control(type='text', placeholder='Телефон', aria-describedby='basic-addon1')
+            .input-group.main-form
+              span#basic-addon1.input-group-addon
+                img(src="img/forma/mail.png" alt="log" width="20" height="16")
+              input.form-control(type='text', placeholder='Электронная почта', aria-describedby='basic-addon1')
+          
+          .form-row.margin-bot
+            .text
+              p Выберите вид транспорта:
+            .checkbox
+              .box
+                img(src="img/forma/avto.png" alt="log" width="22" height="16")
+              .box
+                img(src="img/forma/gd.png" alt="log" width="16" height="19")
+              .box
+                img(src="img/forma/avia.png" alt="log" width="18" height="18")
+              .box
+                img(src="img/forma/m.png" alt="log" width="20" height="22")
+              //- input.form-control(type='text', placeholder='Username', aria-describedby='basic-addon1')
+            .input-group.main-form
+              span#basic-addon1.input-group-addon
+                img(src="img/forma/ves.png" alt="log" width="21" height="20")
+              input.form-control(type='text', placeholder='Вес груза', aria-describedby='basic-addon1')
+            .input-group.main-form
+              span#basic-addon1.input-group-addon
+                img(src="img/forma/ob.png" alt="log" width="21" height="24")
+              input.form-control(type='text', placeholder='Объем груза', aria-describedby='basic-addon1')
+                  
+            
+          .form-row
+            .left-group
+              .form-row
+                .undo
+                  span.icon-un
+                    img(src="img/forma/bef.png" alt="log" width="20" height="20")
+                  span Откуда
+                .redo
+                  span Куда
+                  span.icon-re
+                    img(src="img/forma/prev.png" alt="log" width="21" height="21")
+                  
+              .form-row
+                .input-group.main-form
+                  span#basic-addon1.input-group-addon 
+                    img(src="img/forma/a.png" alt="log" width="19" height="22")
+                  input.form-control(type='text', placeholder='Из какой страны?', aria-describedby='basic-addon1')
+                .input-group.main-form
+                  span#basic-addon1.input-group-addon 
+                    img(src="img/forma/a.png" alt="log" width="19" height="22")
+                  input.form-control(type='text', placeholder='В какую страну?', aria-describedby='basic-addon1')
+                    
+              .form-row
+                .input-group.main-form
+                  span#basic-addon1.input-group-addon
+                    img(src="img/forma/c.png" alt="log" width="24" height="25")
+                  input.form-control(type='text', placeholder='Из какого города?', aria-describedby='basic-addon1')
+                .input-group.main-form
+                  span#basic-addon1.input-group-addon
+                    img(src="img/forma/c.png" alt="log" width="24" height="25")
+                  input.form-control(type='text', placeholder='В какой город?', aria-describedby='basic-addon1')
+                          
+              .form-row
+                .input-group.main-form
+                  span#basic-addon1.input-group-addon
+                    img(src="img/forma/i.png" alt="log" width="22" height="18")
+                  input.form-control(type='text', placeholder='Индекс', aria-describedby='basic-addon1')
+                .input-group.main-form
+                  span#basic-addon1.input-group-addon
+                    img(src="img/forma/i.png" alt="log" width="22" height="18")
+                  input.form-control(type='text', placeholder='Индекс', aria-describedby='basic-addon1')
+                      
+                  
+            .right-group
+              .form-row
+                .os 
+                  span Особенности груза
+              .radio-button
+                .left-r
+                  input#temp(type="radio").in-check
+                  label.form-label(for="temp") Температурный режим
+                  br
+        
+                  input#temp(type="radio").in-check
+                  label.form-label(for="temp") АДР
+                  br
+        
+                  input#temp(type="radio").in-check
+                  label.form-label(for="temp") Складские услуги
+                    
+                .right-r
+                  input#temp(type="radio").in-check
+                  label.form-label(for="temp") Сборный груз
+                  br
+                  input#temp(type="radio").in-check
+                  label.form-label(for="temp") Таможенные услуги
+                  br
+                  input#temp(type="radio").in-check
+                  label.form-label(for="temp") Страхование
+              .prim
+                input.form-control(type='text', placeholder='Примечание')
+                  
+          .form-row.justify
+            .secur
+              span.icon-un
+                img(src="img/forma/zm.png" alt="log" width="20" height="27")
+              span Данные не передаются третьим лицам
+            button.btnm.btnm-form(type="button")
+              span ОТПРАВИТЬ
+
+      //- .modal-footer
+      //-   button.btn.btn-default(type='button', data-dismiss='modal') Закрыть
+      //-   button.btn.btn-primary(type='button') Сохранить изменения

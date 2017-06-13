@@ -1,0 +1,21 @@
+mixin sfers_item(item)
+	div.row.item
+		div.col-md-12
+			div.row
+				div.col-md-2
+					img.image(src='img/main/sfers/'+item.src+'.png')
+				div.col-md-10
+					span.name=item.name
+
+mixin sfers_column(items)
+	div.col-md-4
+		each oneItem in items
+			+sfers_item(oneItem)
+
+section.container
+	section.sfers-block.info-block
+		h2 сферы деятельности
+		div.row
+			+sfers_column([{src:'1',name:'Автомобильная'},{src:'2',name:'Алкогольная'},{src:'3',name:'Деревообрабатывающая'},{src:'4',name:'Индустрия моды'}])
+			+sfers_column([{src:'5',name:'Машиностроение'},{src:'6',name:'Оптово розничная торговля'},{src:'7',name:'Сельхоз техника'},{src:'8',name:'Техника и электроника'}])
+			+sfers_column([{src:'9',name:'Товары народного потребление'},{src:'10',name:'Фармацевтическая'},{src:'11',name:'Химическая'},{src:'12',name:'Целлюлозно-бумажная'}])

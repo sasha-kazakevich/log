@@ -1,0 +1,55 @@
+.video-wrapper {
+    background-image: url('../img/images/px.svg');
+}
+
+.head-block {
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.head-block-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover;
+    z-index: -999;
+}
+
+.query-button {
+    position: fixed;
+    z-index: 100;
+    bottom: 190px;
+    transition: all .2s ease-out;
+}
+
+.query-button-scroll {
+    bottom: 90px;
+}
+
+.head-block-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    &__icon {
+        padding-right: 27px;
+    }
+
+    &__adress {
+        text-align: right;
+    }
+
+    &__light {
+        font-family: 'Ubuntu-Light';
+    }
+}

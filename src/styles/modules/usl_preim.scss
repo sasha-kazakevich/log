@@ -1,0 +1,40 @@
+.preim-block {
+    padding-top: 90px;
+    .row {
+        padding: 0;
+        margin: 0 0 60px 0;
+        .serv-block:last-child {
+            img {
+                padding: 5px 0 0 25px;
+            }
+        }
+    }
+    .row:last-child {
+        margin-bottom: 0;
+    }
+    .serv-block {
+        padding: 0;
+    }
+    .serv {
+        width: 75%;
+        padding: 0 0 0 50px;
+    }
+    h3 {
+        font-size: 14px;
+        font-family: 'Ubuntu-Medium';
+        text-transform: uppercase;
+        color: #0066D0;
+        margin: 0 0 25px 0;
+        line-height: 21px;
+        padding-right: 20px;
+    }
+    p {
+        color: #455a64;
+        line-height: 21px;
+        font-family: 'Ubuntu';
+        margin: 0;
+    }
+    img {
+        padding: 8px 5px 0 0;
+    }
+}

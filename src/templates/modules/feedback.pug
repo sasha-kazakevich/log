@@ -1,0 +1,8 @@
+mixin feed(data)
+  img(src="img/main/feedback-block/" + data.file alt=data.alt class!=attributes.class data-toggle="modal" data-target="#modalImg")
+section.container
+  section.feedback-block.info-block
+    h2 Отзывы
+    .feedback
+      each data in [{file:'feedback.png',alt:'feedback1'},{file:'feedback.png',alt:'feedback2'},{file:'feedback.png',alt:'feedback3'},{file:'feedback.png',alt:'feedback4'},{file:'feedback.png',alt:'feedback5'},{file:'feedback.png',alt:'feedback6'}]
+        +feed(data)

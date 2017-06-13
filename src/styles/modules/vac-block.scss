@@ -1,0 +1,43 @@
+$color1: #263238;
+$color2: #2196F3;
+.vacancies-block {
+    padding: 60px 60px 0 60px;
+    color: $color1;
+    line-height: 21px;
+    h1 {
+       color: $color1;
+       margin-bottom: 50px;
+       margin-top: 0;
+       text-transform: uppercase;
+       font-size: 24px;
+       font-weight: 600;
+    }
+    h2, h3 {
+        color: $color2;
+    }
+    h2 {
+        margin-top: 80px;
+        font-size: 24px;
+    }
+    h3 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    p {
+        margin: 25px 0 60px 0;
+        font-size: 14px;
+    }
+    li {
+        list-style-type: none;
+    }
+    li:before {
+         font-weight: 600;
+         color: $color2;  /* Цвет маркера */
+         content: "•"; /* Маркер */
+         padding-right: 5px; /* Отступ от маркера до текста */
+    }
+    article {
+        margin-bottom: 90px;
+    }
+}

@@ -1,0 +1,17 @@
+mixin team(data)
+    div.t-item.col-lg-6.col-md-6.col-sm-6.col-xs-6
+        div.right-half.col-lg-6.col-md-6.col-sm-6.col-xs-6
+          h3.name= data.name
+          p.job= data.job
+          div.row
+            img(src='img/about/about-team/' + data.file alt= data.alt).col-lg-1.col-md-1.col-sm-1.col-xs-1
+            p.col-lg-10.col-md-10.col-sm-10.col-xs-10.tel= data.tel
+          div.row
+            img(src='img/about/about-team/' + data.file2 alt= data.alt).col-lg-1.col-md-1.col-sm-1.col-xs-1
+            p.col-lg-10.col-md-10.col-sm-10.col-xs-10.mail= data.mail  
+section.container
+  section.team-block.col-lg-12.col-md-12.col-sm-12.col-xs-12
+    h2.min-margin Наша команда
+    div.team.col-lg-12
+      each data in [{name:'Влад Рахманов',job:'Директор по развитию',file:'phone.png',tel:'+375 29 777 77 77',file2:'mail.png',mail:'andrey@tvlogistic.by',alt:'one'},{name:'Мария Дашкевич',job:'Начальник отдела автомобильных перевозок',file:'phone.png',tel:'+375 29 777 77 77',file2:'mail.png',mail:'andrey@tvlogistic.by',alt:'two'},{name:'Алина Широкая',job:'Бухгалтер',file:'phone.png',tel:'+375 29 777 77 77',file2:'mail.png',mail:'andrey@tvlogistic.by',alt:'three'},{name:'Настасия Чекель',job:'Главный экспедитор',file:'phone.png',tel:'+375 29 777 77 77',file2:'mail.png',mail:'andrey@tvlogistic.by',alt:'four'}]
+        +team(data)
