@@ -79,7 +79,7 @@
     }
 
     &__link:hover {
-        color: #2196f3;
+        color: #fff;
         text-decoration: none;
     }
 }
@@ -105,9 +105,9 @@
 .main-menu-scroll {
     color: #0d47a1;
     background-color: #fff;
-    padding: 10px 0;
+    padding: 15px 0;
     border-bottom: 1px solid #bdcad4;
-
+    box-shadow: 3px 0 6px #000;
     .main-menu-logo {
 
         &__image{
