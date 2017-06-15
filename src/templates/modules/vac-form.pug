@@ -1,31 +1,35 @@
-section.vac-form
-  .form-row
-    .input-group.main-form-vac
-      span#basic-addon1.input-group-addon
-        img(src="img/forma/name.png" alt="log" width="20" height="20")
-      input.form-control(type='text', placeholder='Ваше имя', aria-describedby='basic-addon1')
-    .input-group.main-form-vac
-      span#basic-addon1.input-group-addon
-        img(src="img/forma/phone.png" alt="log" width="24" height="24")
-      input.form-control(type='text', placeholder='Телефон', aria-describedby='basic-addon1') 
-  .form-row
-    .input-group.main-form-vac
-      span#basic-addon1.input-group-addon
-        img(src="img/forma/mail.png" alt="log" width="20" height="16")
-      input.form-control(type='text', placeholder='Электронная почта', aria-describedby='basic-addon1')
-    .input-group.main-form-vac
-      span#basic-addon1.input-group-addon
-      input.form-control.no-pad(type='text', placeholder='Ссылка на резюме', aria-describedby='basic-addon1')
-  .form-row
-    .input-group.main-form-vac.mfvlc
-      span#basic-addon1.input-group-addon
-        img(src="img/forma/about.png" alt="log" width="20" height="20")
-      input.form-control.big-inp(type='text', placeholder='О себе', aria-describedby='basic-addon1')        
-  
-  .form-row.justify
-    .secur
-      span.icon-un
-        img(src="img/forma/zm.png" alt="log" width="20" height="27")
-      span.opac Данные не передаются третьим лицам
-    button.btnm.btnm-form(type="button")
-      span ОТПРАВИТЬ
+#myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-body
+        section.vac-form
+          .form-row
+            .input-group.main-form-vac
+              span#basic-addon1.input-group-addon
+                img(src="img/forma/name.png" alt="log" width="20" height="20")
+              input.form-control(type='text', placeholder='Ваше имя', aria-describedby='basic-addon1')
+            .input-group.main-form-vac
+              span#basic-addon1.input-group-addon
+                img(src="img/forma/phone.png" alt="log" width="24" height="24")
+              input.form-control(type='text', placeholder='Телефон', aria-describedby='basic-addon1') 
+          .form-row
+            .input-group.main-form-vac
+              span#basic-addon1.input-group-addon
+                img(src="img/forma/mail.png" alt="log" width="20" height="16")
+              input.form-control(type='text', placeholder='Электронная почта', aria-describedby='basic-addon1')
+            .input-group.main-form-vac
+              span#basic-addon1.input-group-addon
+              input.form-control.no-pad(type='text', placeholder='Ссылка на резюме', aria-describedby='basic-addon1')
+          .form-row
+            .input-group.main-form-vac.mfvlc
+              span#basic-addon1.input-group-addon
+                img(src="img/forma/about.png" alt="log" width="20" height="20")
+              input.form-control.big-inp(type='text', placeholder='О себе', aria-describedby='basic-addon1')        
+          
+          .form-row.justify
+            .secur
+              span.icon-un
+                img(src="img/forma/zm.png" alt="log" width="20" height="27")
+              span.opac Данные не передаются третьим лицам
+            button.btnm.btnm-form(type="button")
+              span ОТПРАВИТЬ
