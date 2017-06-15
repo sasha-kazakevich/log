@@ -23,6 +23,8 @@
             }
             a {
                 display: block;
+                display: flex;
+                align-items: center;
                 min-height: 90px;
                 img {
                         margin-left: 17%;
