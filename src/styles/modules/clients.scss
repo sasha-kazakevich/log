@@ -1,10 +1,10 @@
 .clients-block {
     @media screen and (max-width: 320px) {
-             padding-right: 0;
+            padding-right: 0;
     }
     h2 {
         @media screen and (max-width: 320px) {
-                 padding-bottom: 30px;
+            padding-bottom: 30px;
         }
     }
     ul {
@@ -16,18 +16,19 @@
 	             flex-direction: row;
         }
         li {
+            max-width: 15%;
+            min-height: 270px;
             @media screen and (max-width: 320px) {
                         float: none;
                         padding: 0;
-                        width: 30%;
+                        max-width: 30%;
             }
             a {
-                display: block;
                 display: flex;
+                justify-content: center;
                 align-items: center;
                 min-height: 90px;
                 img {
-                        margin-left: 17%;
                         @media screen and (max-width: 320px) {
                                 width: 50%;
                                 margin: 30px 0 0 10px;
@@ -45,5 +46,6 @@
     }
     p {
         margin-top: 10px;
+        text-align: center;
     }
 }

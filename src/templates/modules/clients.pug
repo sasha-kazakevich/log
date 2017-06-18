@@ -1,15 +1,15 @@
 mixin client(data)
     li 
         a(href="#"): img(src="img/main/clients-block/" + data.file alt=data.alt class!=attributes.class) 
-        p Most designers set their type arbitrarily, either by pulling values out of the
+        p=data.p
 section.container
   section.clients-block.info-block
     h2 Клиенты
     ul.list-inline.list-inline-margin
-        each data in [{file:'1.png',alt:'kronospan'},{file:'2.png',alt:'softform'},{file:'3.png',alt:'keramin'},{file:'4.png',alt:'grimme'},{file:'5.png',alt:'beloboi'},{file:'6.png',alt:'minskajatipographija'}]
+        each data in [{file:'1.png',alt:'kronospan', p: "Мировой лидер в области производства высококачественных древесных плит и смежной продукции"},{file:'2.png',alt:'softform', p: "Белорусско-чешское предприятие, которое специализируется на выпуске высококачественной мебели для дома и офиса"},{file:'3.png',alt:'keramin', p: "Один из крупнейших в Европе производителей керамической плитки, керамического гранита, санитарной керамики и керамического кирпича"},{file:'4.png',alt:'grimme', p : "Свекловичной и овощной техники предлагает широчайшую производственную программу, включающую более 150 вариантов машин."},{file:'5.png',alt:'beloboi', p : "В настоящее время унитарное предприятие «Минская обойная фабрика» является одним из крупнейших производителей обоев на территории СНГ."},{file:'6.png',alt:'minskajatipographija', p: "Специализируется на изготовлении картонной упаковки из тонких картонов различной сложности способом офсетной печати"}]
             +client(data)
     ul.list-inline
-        each data in [{file:'7.png',alt:'ami'},{file:'8.png',alt:'krone'},{file:'9.png',alt:'stroimatinstrument'},{file:'10.png',alt:'minskmetropoliten'},{file:'11.png',alt:'alutech'},{file:'12.png',alt:'industry'}]
+        each data in [{file:'7.png',alt:'ami', p : "Белорусская мебельная фабрика «Лагуна» и магазины «Ами мебель»"},{file:'8.png',alt:'krone', p: "В мире транспорта марка является символом отличного качества, продуманных практических решений и минимальных издержек за срок службы."},{file:'9.png',alt:'stroimatinstrument', p: "Строительные материалы и инструменты, товары для дома, сада и огорода"},{file:'10.png',alt:'minskmetropoliten', p: "Группа компаний «АЛЮТЕХ» – лидер рынка роллетных систем, ведущий производитель алюминиевых профильных систем и секционных ворот"},{file:'11.png',alt:'alutech', p: "Производство ДСП, фанеры и гнутоклееных деталей, производство мебели"},{file:'12.png',alt:'industry', p:"Международная сеть ресторанов общественного питания, специализирующаяся на блюдах из курицы."}]
             +client(data)
 
 

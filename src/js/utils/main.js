@@ -218,6 +218,31 @@ var callback = {
         console.log('online');
     },
     contacts: function(ctx,next){
+
+        var textarea = document.querySelector('textarea');
+        console.log(textarea);
+
+        // textarea.addEventListener('click', function(e) {
+        //     console.log('fd')
+        // })
+        textarea.addEventListener('keypress', function (){
+          console.log('KY!');
+          var el = this;
+          setTimeout(function(){
+            el.style.cssText = 'height:auto';
+            el.style.cssText = 'height:' + el.scrollHeight + 'px';
+          },0);
+        });
+
+        // function autosize(){
+        //   console.log('KY!');
+        //   var el = this;
+        //   setTimeout(function(){
+        //     el.style.cssText = 'height:auto; padding:10px';
+        //     el.style.cssText = 'height:' + el.scrollHeight + 'px';
+        //   },0);
+        // }
+
         var map;
 
             ymaps.ready(function(){

@@ -34,6 +34,35 @@
 
 .query-button-scroll {
     bottom: 90px;
+    .btnm {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: relative;
+        bottom: 0px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.19);
+        transition: bottom .4s ease-out;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            background: url('../img/main/button/btn.svg') no-repeat center center;
+        }
+
+        &:hover {
+            background-color: #0d47a1;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.38);
+            bottom: 5px;
+        }
+
+        span {
+            padding: 0;
+            opacity: 0;
+        }
+    }
 }
 
 .head-block-footer {

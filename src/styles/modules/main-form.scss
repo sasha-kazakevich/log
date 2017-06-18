@@ -42,6 +42,14 @@
     padding: 25px 12px;
     color: #455a64;
 }
+.form-control-textarea {
+    // position: absolute !important;
+    resize: none;
+    overflow: hidden;
+    min-height: 36px;
+    padding: 5px 0;
+}
+
 .form-control:focus {
     box-shadow: none !important;
 }
@@ -108,5 +116,8 @@
     margin: 0;
 }
 textarea.form-control {
-    resize: both; 
+    resize: both;
+}
+
+.contacts-form-textarea {
 }
