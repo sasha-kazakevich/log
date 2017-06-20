@@ -1,4 +1,4 @@
-section.container-fluid
+// section.container-fluid
   .container.info-block
     h2 о нашей работе 
   #carousel.carousel.slide(data-ride='carousel')
@@ -26,3 +26,12 @@ section.container-fluid
       span.glyphicon.glyphicon-chevron-left
     a.right.carousel-control(href='#carousel', role='button', data-slide='next')
       span.glyphicon.glyphicon-chevron-right
+
+include ./mixsins
+
+section.container-fluid
+  section.uslugi-block
+    div.row
+      each data in [{src: 'img/main/service/1.png',name:'таможенные <br/> услуги',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/main/service/1.png',name:'дополнительное <br/> страхование',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/main/service/1.png',name:'перевозка <br/> температурных грузов',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/main/service/1.png',name:'перевозка опасных <br/> грузов',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/main/service/1.png',name:'оклейка. маркировка. <br/> упаковка',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/main/service/1.png',name:'перевозка <br/> негабаритных грузов',descript:'Most designers set their type arbitrarily, either by pulling values out '},]
+        +serviceCard(data,'4')
+
