@@ -78,41 +78,53 @@ var callback = {
         });
     },
     services: function(ctx,next) {
-        $('.point-belarus').viewportChecker({
-          classToRemove: 'invisible',
-          classToAdd: 'visible animated zoomIn',
-          offset: 100
-        });
+        // $('.point-belarus').viewportChecker({
+        //   classToRemove: 'invisible',
+        //   classToAdd: 'visible animated zoomIn',
+        //   offset: 100
+        // });
+        //
+        // $('.point-usa').viewportChecker({
+        //   classToRemove: 'invisible',
+        //   classToAdd: 'visible animated zoomIn',
+        //   offset: 100
+        // });
+        //
+        // $('.point-germany').viewportChecker({
+        //   classToRemove: 'invisible',
+        //   classToAdd: 'visible animated zoomIn',
+        //   offset: 100
+        // });
+        //
+        // $('.point-russia').viewportChecker({
+        //   classToRemove: 'invisible',
+        //   classToAdd: 'visible animated zoomIn',
+        //   offset: 100
+        // });
+        //
+        // $('.point-india').viewportChecker({
+        //   classToRemove: 'invisible',
+        //   classToAdd: 'visible animated zoomIn',
+        //   offset: 100
+        // });
+        //
+        // $('.point-china').viewportChecker({
+        //   classToRemove: 'invisible',
+        //   classToAdd: 'visible animated zoomIn',
+        //   offset: 100
+        // });
+        let button = document.getElementById('query-button');
 
-        $('.point-usa').viewportChecker({
-          classToRemove: 'invisible',
-          classToAdd: 'visible animated zoomIn',
-          offset: 100
-        });
+        window.addEventListener('scroll', function(e) {
+            if(button.classList.contains('query-button-scroll') && window.pageYOffset < 40) {
+                button.classList.remove('query-button-scroll');
+            }
 
-        $('.point-germany').viewportChecker({
-          classToRemove: 'invisible',
-          classToAdd: 'visible animated zoomIn',
-          offset: 100
-        });
+            if(window.pageYOffset > 40) {
+                button.classList.add('query-button-scroll');
+            }
 
-        $('.point-russia').viewportChecker({
-          classToRemove: 'invisible',
-          classToAdd: 'visible animated zoomIn',
-          offset: 100
-        });
-
-        $('.point-india').viewportChecker({
-          classToRemove: 'invisible',
-          classToAdd: 'visible animated zoomIn',
-          offset: 100
-        });
-
-        $('.point-china').viewportChecker({
-          classToRemove: 'invisible',
-          classToAdd: 'visible animated zoomIn',
-          offset: 100
-        });
+        })
 
         var map;
 

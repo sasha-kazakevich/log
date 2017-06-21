@@ -1,21 +1,22 @@
 .hod-block {
-    
+
     .row {
         margin: 0;
         padding: 0 0 0 6px;
-        
+
     }
     .hod-part {
         padding: 0;
         img {
-            padding: 5px 20px 0 0;
+            // padding: 5px 20px 0 0;
         }
         .special {
             padding: 5px 20px 0 3px;
         }
         .hod {
             width: 75%;
-            padding: 0 0 0 20px;;
+            padding: 0 0 0 20px;
+            text-align: center;
             h3 {
                 margin: 0;
                 color: #0066D0;

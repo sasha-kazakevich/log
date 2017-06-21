@@ -1,26 +1,10 @@
-mixin uslugi3-column(item)
-	div.col-md-4
-		div.row.name-row
-			span.name=item.name
-		div.row
-			div.col-md-5.from-row
-				div.row
-					img.img-left(src='img/uslugi/usl-world/'+item.src+'.png')
-			div.col-md-3.arrow-row
-				img.img-arrow(src='img/uslugi/usl-world/arrow.png')
-			div.col-md-4.to-row
-				img.img-right(src='img/uslugi/usl-world/belorussia.png')
-
-
-div.container
-	section.uslugi3-block.info-block
-		h2 Наша география
-		div.row.picture-row
-			+uslugi3-column({src:'1',name:'Из Юго-Восточной Азии'})
-			+uslugi3-column({src:'2',name:'Из Европы в Беларусь'})
-			+uslugi3-column({src:'3',name:'Из США в Беларусь'})
-		div.row.info-row
-			span.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam tellus non justo elementum, ac venenatis mi malesuada. Donec venenatis tincidunt pharetra. Vivamus pretium dui ante, imperdiet tincidunt ipsum molestie vel. Fusce nulla mi, gravida et venenatis a, condimentum sed urna. Nulla facilisi. 
-			br
-			br
-			span.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam tellus non justo elementum
+include ./mixsins
+section.container
+    div.row.info-block
+            h2 Наши направления
+section.container-fluid
+  section.uslugi3-block
+    
+    div.row
+      each data in [{src: 'img/main/service/1.png',name:'россия',descript:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  '},{src: 'img/main/service/1.png',name:'европа',descript:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  '},{src: 'img/main/service/1.png',name:'азия',descript:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '},{src: 'img/main/service/1.png',name:'америка',descript:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '}]
+        +serviceCard(data,'3')

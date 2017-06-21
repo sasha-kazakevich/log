@@ -1,28 +1,36 @@
+//- section.container-fluid
+//-   .container.info-block
+//-     h2 о нашей работе 
+//-   #carousel.carousel.slide(data-ride='carousel')
+//-     .container
+//-       .carousel-inner
+//-           .item.active
+//-             .row
+//-               .img.col-md-2
+//-                 img(src="img/uslugi/usl-slider/s1.png" width="100" height="82")
+//-               .slide-text.col-md-10
+//-                 p
+//-                   | Create your online portfolio in minutes
+//-                 p
+//-                   | Игорь Матусин, компания «Белобои»
+//-           .item
+//-             .row
+//-               .img.col-md-2
+//-                 img(src="img/uslugi/usl-slider/s1.png" width="100" height="82")
+//-               .slide-text.col-md-10
+//-                 p
+//-                   | Create your online portfolio in minutes
+//-                 p
+//-                   | Игорь Матусин, компания «Белобои»
+//-     a.left.carousel-control(href='#carousel', role='button', data-slide='prev')
+//-       span.glyphicon.glyphicon-chevron-left
+//-     a.right.carousel-control(href='#carousel', role='button', data-slide='next')
+//-       span.glyphicon.glyphicon-chevron-right
+
+include ./mixsins
+
 section.container-fluid
-  .container.info-block
-    h2 о нашей работе 
-  #carousel.carousel.slide(data-ride='carousel')
-    .container
-      .carousel-inner
-          .item.active
-            .row
-              .img.col-md-2
-                img(src="img/uslugi/usl-slider/s1.png" width="100" height="82")
-              .slide-text.col-md-10
-                p
-                  | Create your online portfolio in minutes
-                p
-                  | Игорь Матусин, компания «Белобои»
-          .item
-            .row
-              .img.col-md-2
-                img(src="img/uslugi/usl-slider/s1.png" width="100" height="82")
-              .slide-text.col-md-10
-                p
-                  | Create your online portfolio in minutes
-                p
-                  | Игорь Матусин, компания «Белобои»
-    a.left.carousel-control(href='#carousel', role='button', data-slide='prev')
-      span.glyphicon.glyphicon-chevron-left
-    a.right.carousel-control(href='#carousel', role='button', data-slide='next')
-      span.glyphicon.glyphicon-chevron-right
+  section.uslugi-block
+    div.row
+      each data in [{src: 'img/main/service/1.png',name:'таможенные <br/> услуги',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/main/service/1.png',name:'дополнительное <br/> страхование',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/main/service/1.png',name:'перевозка <br/> температурных грузов',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/main/service/1.png',name:'перевозка опасных <br/> грузов',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/main/service/1.png',name:'оклейка. маркировка. <br/> упаковка',descript:'Most designers set their type arbitrarily, either by pulling values out '},{src: 'img/main/service/1.png',name:'перевозка <br/> негабаритных грузов',descript:'Most designers set their type arbitrarily, either by pulling values out '},]
+        +serviceCard(data,'2')
