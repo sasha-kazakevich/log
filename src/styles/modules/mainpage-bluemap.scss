@@ -12,54 +12,46 @@
     &__point {
         position: absolute;
         cursor: pointer;
+        text-transform: uppercase; 
+        color: #fff;
     }
-
     &__point_usa {
-        top: 48%;
-        left: 30%;
-        width: 65px;
-        height: 30px;
-        background: url('../img/main/bluemap-block/markerusa.png') center center no-repeat;
+        top: 53%;
+        left: 25.5%;
+        text-transform: uppercase; 
+        color: #fff;
+    }
+    &__point_usa img {
+        margin: 0 0 2px 20px;
     }
 
     &__point_belarus {
-        top: 34.3%;
-        left: 52%;
-        width: 55px;
-        height: 65px;
-        background: url('../img/main/bluemap-block/marker-white.png') center center no-repeat;
+        top: 41%;
+        left: 53.3%;
     }
 
-    &__point_germany {
-        top: 41.5%;
-        left: 44.3%;
-        width: 95px;
-        height: 30px;
-        background: url('../img/main/bluemap-block/markerger.png') center center no-repeat;
+    &__point_europe {
+        top: 44.4%;
+        left: 47.3%;
+    }
+    &__point_europe img {
+        margin: 0 0 2px 12px;
     }
 
     &__point_russia {
-        top: 39%;
+        top: 37%;
         left: 58%;
-        width: 80px;
-        height: 30px;
-        background: url('../img/main/bluemap-block/markerrus.png') center center no-repeat;
+    }
+    &__point_russia img {
+        margin: 0 0 2px 12px;
     }
 
-    &__point_india {
-        top: 56%;
-        left: 60.5%;
-        width: 80px;
-        height: 33px;
-        background: url('../img/main/bluemap-block/markerind.png') center center no-repeat;
-    }
-
-    &__point_china {
+    &__point_asia {
         top: 52%;
-        left: 72.5%;
-        width: 80px;
-        height: 30px;
-        background: url('../img/main/bluemap-block/markerchin.png') center center no-repeat;
+        left: 69%;
+    }
+    &__point_asia img {
+        margin: 0 0 2px 3px;
     }
 }
 
@@ -78,6 +70,7 @@
         font-size: 24px;
         margin: 0;
         padding: 0;
+        text-transform: uppercase;
     }
 
     &__title_bold {
